@@ -10,7 +10,7 @@ let WindSpeed = document.getElementById('windspeed');
 let Condition = document.getElementById('condition');
 let WeatherImage = document.getElementById('image');
 
-const apiKey = "a7ea29ff4ae14d09a95150917251309";
+const apiKey = "YOUR_API_KEY";
 
 async function getWeatherDetails(city){
 
@@ -53,4 +53,5 @@ function updatedUI(data){
     WindSpeed.innerText = `${data.windSpeed} kph`;
     Condition.innerText = `${data.condition}`;
     WeatherImage.src = `${data.weatherImg}`
+
 }
